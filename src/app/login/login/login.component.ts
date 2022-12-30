@@ -8,11 +8,12 @@ export class LoginComponent {
   user: string= 'admin@admin'
   password: string = 'password'
 
-  show = false
+  show:boolean = false
+  let email: string = ''
 
-  submit(e:Event){
-    e.preventDefault()
-    console.log('first')
+  submit(event:Event){
+    event.preventDefault()
+    console.log(email)
   }
 
 
